@@ -19,3 +19,15 @@ getNewExperimentDirectoryPath(){
     local newExperimentDirectoryPath="$onGoingExperimentsDirectoryPath/$unix_time"
     echo "$newExperimentDirectoryPath"
 }
+
+getTotalNumberOfDirectories(){
+
+    # Function: getTotalNumberOfDirectories
+    # Description: This function takes an existing Directory Path and returns number of Directories inside given Directory Path.
+    # Arguments:
+    #   $1 - Existing Directory Path
+    # Returns: Number 
+
+    local ret="$(ls -l $1 | grep -c ^d)"
+    echo "$ret"
+}

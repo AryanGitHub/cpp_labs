@@ -9,20 +9,9 @@
 
 currentBashFileDirectoryPath=$(dirname  "$0")
 source "$currentBashFileDirectoryPath/globalVariables.sh" #importing globalVariables
+source "$currentBashFileDirectoryPath/globalFunctions.sh" #importing globalFunctions
 
 onGoingExperimentPath="$1"
-
-getTotalNumberOfDirectories(){
-
-    # Function: getTotalNumberOfDirectories
-    # Description: This function takes an existing Directory Path and returns number of Directories inside given Directory Path.
-    # Arguments:
-    #   $1 - Existing Directory Path
-    # Returns: Number 
-
-    local ret="$(ls -l $1 | grep -c ^d)"
-    echo "$ret"
-}
 
 newExperimentNumber="$(getTotalNumberOfDirectories $experimentsDirectoryPath)"
 newPublishExperimentDirectoryPath="$experimentsDirectoryPath/experiment_$newExperimentNumber"
