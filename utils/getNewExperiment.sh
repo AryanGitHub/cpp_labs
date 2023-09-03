@@ -2,8 +2,8 @@
 
 currentBashFileDirectoryPath=$(dirname  "$0")
 source "$currentBashFileDirectoryPath/globalVariables.sh" #importing globalVariables
+source "$currentBashFileDirectoryPath/globalFunctions.sh" #importing globalFunctions
 
-unix_time="$(date +%s)"
-newExperimentDirectoryPath="$onGoingExperimentsDirectoryPath/$unix_time"
+newExperimentDirectoryPath="$(getNewExperimentDirectoryPath)"
 mkdir "$newExperimentDirectoryPath"
 cp "$layoutsDirectoryPath/basic_layout.cpp" "$newExperimentDirectoryPath/experiment.cpp"
