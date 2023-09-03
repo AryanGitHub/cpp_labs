@@ -16,3 +16,5 @@ onGoingExperimentPath="$1"
 newExperimentNumber="$(getTotalNumberOfDirectories $experimentsDirectoryPath)"
 newPublishExperimentDirectoryPath="$experimentsDirectoryPath/experiment_$newExperimentNumber"
 mv "$onGoingExperimentPath" "$newPublishExperimentDirectoryPath"
+
+applyClangFormatToAllCAndCPPFiles $newPublishExperimentDirectoryPath

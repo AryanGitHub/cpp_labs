@@ -31,3 +31,19 @@ getTotalNumberOfDirectories(){
     local ret="$(ls -l $1 | grep -c ^d)"
     echo "$ret"
 }
+
+applyClangFormatToAllCAndCPPFiles(){
+    # Function: applyClangFormatToAllCAndCPPFiles
+    # Description: This function takes an existing Directory Path of an experiment and make app c and cpp files in the given clang-format
+    # Arguments:
+    #   $1 - Existing Directory Path of Experiment
+    # Returns: None
+
+    local directoryPath="$1"
+    find "$directoryPath" -type f -name "*.c" -o -name "*.cpp"  | while read fname
+    do
+        clang-format -style=Microsoft -i ${fname}
+    done
+    return 0
+}
+

@@ -48,7 +48,7 @@ For that use
 ```clang-format -style=Microsoft <path to c/cpp file>```
 and to write the change
 ```clang-format -style=Microsoft -i <path to c/cpp file>```
-~~PublishExperiment.sh should automatically do that. Search for all c/cpp files and run this.~~
+PublishExperiment.sh automatically do that. Search for all c/cpp files and run this.
     
 #### **For bash script files**
 For every bash script add a comment block having this information.
@@ -76,7 +76,7 @@ Every function definition adds a comment block having this information.
 
 ### **Todo**
 - [ ] PublishExperiment.sh have these things to
-    - [ ] maintain clang-formate for the experiment to be published
+    - [x] maintain clang-formate for the experiment to be published
     - [ ] add auto-commit feature once published with description extraction
 - [ ] Add Make file and build folder for each experiment
 - [ ] add Python script to extract tags and tasks for each experiment to be used later.
