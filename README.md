@@ -1,7 +1,22 @@
-# cpp_labs
-
 This repo is for doing and storing small CPP experiments, it's like playing with CPP and storing its results, in a controlled and automated way.
 I needed this because there there so many things to play with and witness in CPP!
+
+### **Braches**
+There are different branches for different works.
+**Longlived branches**:
+* ```main branch```: used for storing all experiemnts data.
+the ```main branch``` should NOT merged to any other branch anywhere!
+Only ```dev branch``` can merge into ```main branch```.
+
+* ```dev branch```: used only for building project other than the ```./experiment``` folder. It's mainly for building different utils and merging features to this branch.
+Clone this branch for cloning only the base project and not including the ``` experiment folder```.
+TODO: add a part in ReadMe "How to clone this project."
+
+
+**Shortlived branches**:
+* ```feature/*```: all new features are added in their respective branches and then merged to the ```dev``` branch. for example branch name: ```feature/adding-makefiles```
+
+
 
 ### **How To Use?** 
 There are 3 main commands as of now
@@ -48,7 +63,7 @@ For that use
 ```clang-format -style=Microsoft <path to c/cpp file>```
 and to write the change
 ```clang-format -style=Microsoft -i <path to c/cpp file>```
-PublishExperiment.sh automatically do that. Search for all c/cpp files and run this.
+~~PublishExperiment.sh should automatically do that. Search for all c/cpp files and run this.~~
     
 #### **For bash script files**
 For every bash script add a comment block having this information.
