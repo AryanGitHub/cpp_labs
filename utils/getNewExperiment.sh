@@ -11,3 +11,4 @@ source "$currentBashFileDirectoryPath/globalFunctions.sh" #importing globalFunct
 newExperimentDirectoryPath="$(getNewExperimentDirectoryPath)"
 mkdir "$newExperimentDirectoryPath"
 cp "$layoutsDirectoryPath/basic_layout.cpp" "$newExperimentDirectoryPath/experiment.cpp"
+cp "$layoutsDirectoryPath/Makefile" "$newExperimentDirectoryPath/Makefile"
