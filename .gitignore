@@ -1,3 +1,6 @@
+# ./experiemnts/others folder containing on going and not published experiements, maybe some archived experiments too, which are decided never to be published.
+experiments/others/*
+
 # Prerequisites
 *.d
 
