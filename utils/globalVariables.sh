@@ -3,7 +3,7 @@
 projectPath="$(pwd)" #assuming all sh files will be called from project main directory
 
 experimentsDirectoryPath="$projectPath/experiments" #experiment directory
-onGoingExperimentsDirectoryPath="$projectPath/experiments/on_going" #on going experiments directory
+onGoingExperimentsDirectoryPath="$projectPath/experiments/others/on_going" #on going experiments directory
 
 utilsDirectoryPath="$projectPath/utils"
 
