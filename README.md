@@ -91,7 +91,8 @@ Every function definition adds a comment block having this information.
 
 ### **Todo**
 - [ ] PublishExperiment.sh have these things to
-    - [x] maintain clang-formate for the experiment to be published
+    - [ ] maintain clang-formate for the experiment to be published
     - [ ] add auto-commit feature once published with description extraction
-- [ ] Add Make file and build folder for each experiment
+- [x] Add Makefile for each experiment
 - [ ] add Python script to extract tags and tasks for each experiment to be used later.
+
