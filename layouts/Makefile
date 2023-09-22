@@ -7,7 +7,7 @@ exeFile = $(fileName).exe
 buildInfoFile =$(fileName)_buildInfo.txt
 
 flags = -g -Wall
-compiler = clang++
+compiler = g++
 
 $(exeFile):$(objFiles)
 	$(compiler) $(flags) $(objFiles) -o $(exeFile)
