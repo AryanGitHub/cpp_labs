@@ -31,11 +31,11 @@ run:$(exeFile)
 	@echo "----------------"
 	@echo "compiler = $(compiler)" > $(buildInfoFile) #overwrite if already exist!
 	@echo "flags = $(flags)" >> $(buildInfoFile)
-	@echo "compilerInfo: " >> $(buildInfoFile)
-	$(compiler) --version >> $(buildInfoFile)
 	@echo "source_code files: $(sourceCodeFiles)">> $(buildInfoFile)
 	@echo "obj files: $(objFiles)" >> $(buildInfoFile)
 	@echo "exe file: $(exeFile)" >> $(buildInfoFile)
+	@echo "compilerInfo: " >> $(buildInfoFile)
+	@$(compiler) --version >> $(buildInfoFile)
 	@cat $(buildInfoFile)
 	@echo "----------------"
 	$(exeFile)
