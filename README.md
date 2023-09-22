@@ -3,6 +3,8 @@ I needed this because there there so many things to play with and witness in CPP
 
 ### **Braches**
 There are different branches for different works.
+
+
 **Longlived branches**:
 * ```main branch```: used for storing all experiemnts data.
 the ```main branch``` should NOT merged to any other branch anywhere!
@@ -31,6 +33,7 @@ There are 3 main commands as of now
 #### **For ./utils/getNewExperiment.sh**
 
 **SYNOPSIS**
+
     ./utils/getNewExperiment.sh (no arguments required)
     
 ----
@@ -38,7 +41,9 @@ There are 3 main commands as of now
     
 #### **For ./utils/publishExperiment.sh**
 **SYNOPSIS**
+
     ./utils/publishExperiment.sh <existing directory path to the "on_going" experiment.>
+    
 **DESCRIPTION**
 To move the experiment from "on_going" to the experiments folder. It is automatically named when it's moved.
 
@@ -48,6 +53,7 @@ To move the experiment from "on_going" to the experiments folder. It is automati
 
 #### **For utils/fork.sh**
 **SYNOPSIS**
+
     utils/fork.sh <existing directory path to the experiment.>
     
 **DESCRIPTION**
@@ -59,11 +65,13 @@ To fork (copy) the experiment to the "on_going" experiments directory. The forke
 
 #### **For C/Cpp files**
 Use clange-format Microsoft style.
+
 For that use 
 ```clang-format -style=Microsoft <path to c/cpp file>```
 and to write the change
 ```clang-format -style=Microsoft -i <path to c/cpp file>```
-~~PublishExperiment.sh should automatically do that. Search for all c/cpp files and run this.~~
+
+PublishExperiment.sh should automatically do that. it searches for all c/cpp files inside the experiment folder and runs this.
     
 #### **For bash script files**
 For every bash script add a comment block having this information.
@@ -91,8 +99,10 @@ Every function definition adds a comment block having this information.
 
 ### **Todo**
 - [ ] PublishExperiment.sh have these things to
-    - [ ] maintain clang-formate for the experiment to be published
-    - [ ] add auto-commit feature once published with description extraction
-- [x] Add Makefile for each experiment
-- [ ] add Python script to extract tags and tasks for each experiment to be used later.
-
+    - [x] Maintain clang-formate for the experiment to be published.
+    - [ ] Add auto-commit feature once published with description extraction.
+- [x] Add a Makefile for each experiment.
+- [ ] Add Python script to extract tags and tasks for each experiment to be used later.
+- [ ] Add support for `clang-tidy` and use it from `make`.
+- [ ] Add bash/python script to run multiple input test cases.
+- [ ] Add support support for all types of sanitizers running automatically.
