@@ -71,7 +71,7 @@ For that use
 and to write the change
 ```clang-format -style=Microsoft -i <path to c/cpp file>```
 
-PublishExperiment.sh should automatically do that. it search for all c/cpp files inside the experiemnt folder and run this.
+PublishExperiment.sh should automatically do that. it searches for all c/cpp files inside the experiment folder and runs this.
     
 #### **For bash script files**
 For every bash script add a comment block having this information.
@@ -99,9 +99,10 @@ Every function definition adds a comment block having this information.
 
 ### **Todo**
 - [ ] PublishExperiment.sh have these things to
-    - [ ] maintain clang-formate for the experiment to be published
-    - [ ] add auto-commit feature once published with description extraction
-- [x] Add Makefile for each experiment
-- [ ] add Python script to extract tags and tasks for each experiment to be used later.
-
-
+    - [x] Maintain clang-formate for the experiment to be published.
+    - [ ] Add auto-commit feature once published with description extraction.
+- [x] Add a Makefile for each experiment.
+- [ ] Add Python script to extract tags and tasks for each experiment to be used later.
+- [ ] Add support for `clang-tidy` and use it from `make`.
+- [ ] Add bash/python script to run multiple input test cases.
+- [ ] Add support support for all types of sanitizers running automatically.
