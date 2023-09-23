@@ -15,6 +15,14 @@ onGoingExperimentPath="$1"
 
 newExperimentNumber="$(getTotalNumberOfDirectories $experimentsDirectoryPath)"
 newPublishExperimentDirectoryPath="$experimentsDirectoryPath/experiment_$newExperimentNumber"
+
 mv "$onGoingExperimentPath" "$newPublishExperimentDirectoryPath"
 
 applyClangFormatToAllCAndCPPFiles $newPublishExperimentDirectoryPath
+
+#-----------------building commit messages
+gitCommitMainMessage="adding experiment $newExperimentNumber"
+gitCommitDescription="$(python -B $currentBashFileDirectoryPath/getAim.py $newPublishExperimentDirectoryPath)"
+
+git add $newPublishExperimentDirectoryPath
+git commit -m "$gitCommitMainMessage" -m "$gitCommitDescription"

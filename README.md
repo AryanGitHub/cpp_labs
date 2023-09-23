@@ -98,11 +98,11 @@ Every function definition adds a comment block having this information.
 
 
 ### **Todo**
-- [ ] PublishExperiment.sh have these things to
+- [x] PublishExperiment.sh have these things to
     - [x] Maintain clang-formate for the experiment to be published.
-    - [ ] Add auto-commit feature once published with description extraction.
+    - [x] Add auto-commit feature once published with description extraction.
 - [x] Add a Makefile for each experiment.
-- [ ] Add Python script to extract tags and tasks for each experiment to be used later.
+- [x] Add Python script to extract tags and tasks for each experiment to be used later.
 - [ ] Add support for `clang-tidy` and use it from `make`.
 - [ ] Add bash/python script to run multiple input test cases.
 - [ ] Add support support for all types of sanitizers running automatically.
