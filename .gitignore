@@ -4,6 +4,9 @@ experiments/others/*
 # the build info txt file made at each "make run" command of each experiment
 *experiment_buildInfo.txt
 
+# python scripts folder
+*/__pycache__/
+
 # Prerequisites
 *.d
 
